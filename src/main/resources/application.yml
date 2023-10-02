@@ -1,0 +1,24 @@
+server:
+  port: 20290
+
+spring:
+  application.name: forex-service
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: angularpay
+      username: service_account
+      password: service_account_password
+      authentication-database: angularpay
+
+angularpay:
+  codecSizeInMB: 50
+  redis:
+    host: localhost
+    port: 6379
+    timeout: 10000
+  fixer:
+    baseUrl: http://data.fixer.io/api
+    apiKey: 1114167d359b4e5b0d67787d99ec9677
+
